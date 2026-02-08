@@ -72,6 +72,11 @@
                 "type": "string",
                 "description": "path to the target exe",
                 "default": ""
+              },
+              "cwd": {
+                "type": "string",
+                "description": "path to expected cwd",
+                "default": "${workspaceFolder}"
               }
             }
           }
@@ -81,7 +86,8 @@
             "type": "raddebugger",
             "request": "launch",
             "name": "launch rad debugger",
-            "program": ""
+            "program": "",
+            "cwd": "${workspaceFolder}"
           }
         ]
       }
